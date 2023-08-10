@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<input type="text" name="enter password" id="enter password">
+	<input type="text" name="re enter password" id="re enter password">
+	<button onclick="func()">Validate</button>
+	<script>
+		function func(){
+			let p1=document.getElementById("enter password");
+			let p2=document.getElementById("re enter password");
+			if(p1.value.match(p2.value)){
+				alert('you entered same passwords')
+			}
+			else{
+				alert('enter again')
+			}
+		}
+	</script>
+</body>
+</html>
